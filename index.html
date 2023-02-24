@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="img/favicon.png" type="image/png"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<title>webpack</title>
+<script defer src="main.3c51e7b60cea9e96ecb7.js"></script></head>
+
+<body>
+	<div class="conteiner">
+		<div class="conteiner__wrapper">
+			<!-- header -->
+			<div class="wrapper__header">
+				<div class="header-logo">
+					<h1>AviaRocks</h1>
+				</div>
+				<div class="header-search">
+					<form action="#">
+						<input type="search" name="searches" id="SearchAvia" placeholder="Поиск по сайту...">
+					</form>
+				</div>
+				<div class="header-social">
+					<picture>
+						<a href="https://vk.com/avia">
+							<img src="assets/VK.png" alt="">
+						</a>
+						<a href="tel:79013433548">
+							<img src="assets/telegram.png" alt="">
+						</a>
+						<a href="mailto:igorkapis@gmail.com">
+							<img src="assets/mail.png" alt="">
+						</a>
+						<a href="#">
+							<img src="assets/info.png" alt="" class="open-popup">
+						</a>
+					</picture>
+					<!-- popup info -->
+					<div class="header__popup-info">
+						<div class="header__popup-wrap">
+							<img src="assets/closePopup.svg" alt="" class="header__popup-close">
+							<div class="header__popup-content">
+								<b>Добро-Пожаловать в AviaRocks</b>
+								<p>Здравствуйте! Ищете лучшие варианты авиабилетов? У нас на сайте вы можете найти самые
+									выгодные предложения по авиабилетам по всему миру. Подберите рейс по вашим
+									предпочтениям, и
+									мы предоставим вам крупнейший выбор авиарейсов по разумным ценам. Вы также можете
+									посмотреть
+									наши последние акции и предложения по авиабилетам, а также проверить доступность
+									билетов и их
+									стоимость. Наша команда поможет вам выбрать лучшие рейсы и подберет идеальные
+									авиабилеты для
+									вашей поездки.</p>
+								<div class="header__popup-button">
+									<a href="#">Посмотреть Билеты</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main block -->
+			<div class="wrapper__main">
+				<div class="main__ticket">
+					<div class="main__ticket-wrapper">
+						<div class="main__ticket-search-tiket">
+							<img src="assets/blockTicketSearch.png" alt="" class="ticketbtn">
+							<a href="#" class="byeticket">Купить Билет<img src="assets/byeTicketbutons.svg" alt=""></a>
+						</div>
+						<div class="main__ticket-bye-tiket">
+							<img src="assets/blockTicket.png" alt="" class="ticketbtn">
+							<a href="#" class="airotiketsearch">Доступные Перелеты<img src="assets/ButtonBayTicket.svg" alt="" class="searchticket"></a>
+						</div>
+					</div>
+					<!-- bye tiket -->
+					<div class="main-tiket-bye">
+						<div class="main-tiket-wrap">
+							<img src="assets/closePopup.svg" alt="" class="main-tiket-close">
+							<div class="main-tiket-form">
+								<h2>Заполните форму и наши сотрудники свяжутся с вами.</h2>
+								<form action="#" method="get" class="formbyetiket">
+									<p>Имя Фамилия Отчество</p>
+									<input type="text" name="name">
+									<p>Дата Рождения</p>
+									<input type="date" name="datelife">
+									<p>Ваша Почта</p>
+									<input type="email" name="email">
+									<p>Телефон</p>
+									<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+									<p>Куда желаете полететь</p>
+									<input type="text" name="airopords" placeholder="куда летим?..">
+									<p>Дата и Время Вылета</p>
+									<input type="datetime-local" name="airTravelDate">
+									<button type="submit" name="submitForm">Отправить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- bye tiket end -->
+					<!-- tiket airoPlans -->
+					<div class="main-tiket-airo">
+						<div class="main-tiket-airo-wrap">
+							<img src="assets/closePopup.svg" alt="" class="main-tiket-airo-close">
+							<div class="main-tiket-airo-search">
+								<h2>Доступные Перелеты</h2>
+								<div class="main-tiket-airo-search__turkey searchtickets">
+									<p>Москва-Турция | <b>С пересадками</b></p>
+									<i>24.700р</i>
+								</div>
+								<div class="main-tiket-airo-search__erevan searchtickets">
+									<p>Москва-Ереван | <b>Без пересадок</b></p>
+									<i>17.100р</i>
+								</div>
+								<div class="main-tiket-airo-search__egypet searchtickets">
+									<p>Москва-Египет | <b>Без пересадок</b></p>
+									<i>36.500р</i>
+								</div>
+								<div class="main-tiket-airo-search__polski searchtickets">
+									<p>Москва-Польша | <b>С пересадками</b></p>
+									<i>76.100р</i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- tiket airoPlans-end -->
+				</div>
+				<!-- Slider main container -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="image-slider__image">
+								<img src="assets/One-Air.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="image-slider__image">
+								<img src="assets/Aviablock1.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="image-slider__image">
+								<img src="assets/Aviablock1p.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div> -->
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+				<div class="main-block-status">
+					<div class="main-block-status__wraper">
+						<div class="main-block-status__diagramm">
+							<h2>Статистика перелетов за 2022г</h2>
+							<div class="status__diagramm-erevan tables">
+								<div class="erevan-pros">
+									<p>Ереван <b> : 43%</b></p>
+								</div>
+							</div>
+							<div class="status__diagramm-tyrkey tables">
+								<div class="tyrkey-pros">
+									<p>Турция <b> : 66%</b></p>
+								</div>
+							</div>
+							<div class="status__diagramm-egypet tables">
+								<div class="egypet-pros">
+									<p>Египет <b> : 69%</b></p>
+								</div>
+							</div>
+							<div class="status__diagramm-polski tables">
+								<div class="polski-pros">
+									<p>Польша <b> : 72%</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-block2">
+					<h2>Горячие Туры</h2>
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<div class="image-slider__image">
+									<img src="assets/Турция.jpg" alt="1">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="image-slider__image">
+									<img src="assets/block2Otdih.jpg" alt="2">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="image-slider__image">
+									<img src="assets/block2Otdiha.jpg" alt="3">
+								</div>
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- If we need navigation buttons
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div>
+				<div class="main-block3">
+					<h2>Цены</h2>
+					<table style="width: 100%;">
+						<tr>
+							<th>Путевки</th>
+							<th>Даты-туда</th>
+							<th>Даты-обратно</th>
+							<th>Цены</th>
+						</tr>
+						<tr>
+							<td><b>Ереван</b></td>
+							<td><input type="date" name="dateA" id="dateA"></td>
+							<td><input type="date" name="dateB" id="dateB"></td>
+							<td>17.100 руб</td>
+						</tr>
+						<tr>
+							<td><b>Турция</b></td>
+							<td><input type="date" name="dateA" id="dateA"></td>
+							<td><input type="date" name="dateB" id="dateB"></td>
+							<td>24.700 руб</td>
+						</tr>
+						<tr>
+							<td><b>Египет</b></td>
+							<td><input type="date" name="dateA" id="dateA"></td>
+							<td><input type="date" name="dateB" id="dateB"></td>
+							<td>36.500 руб</td>
+						</tr>
+						<tr>
+							<td><b>Польша</b></td>
+							<td><input type="date" name="dateA" id="dateA"></td>
+							<td><input type="date" name="dateB" id="dateB"></td>
+							<td>76.100 руб</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- fotter -->
+			<div class="wrapper__footer">
+				<div class="footer__conteiner">
+					<i>С уважением наша команда</i>
+					<h1>AviaRocks</h1>
+					<b>Юридический адресс: Пресненская набережная 12.</b>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
